@@ -1,0 +1,150 @@
+:root {
+    --grey-soft: #697077;
+    --dark-grey-soft: #4c4e61;
+    --red-soft: #ea5353;
+    --orange-soft: #fcaf4a;
+    --blue-soft: #549ef2;
+    --cyan-soft: #45d3d3;
+    --lilac: #3e52a3;
+
+    --box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    text-wrap: balance;
+    color: var(--dark-grey-soft);
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: var(--grey-soft);
+    min-height: 100vh;
+}
+
+main {
+    margin: calc(5% + 10px);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(50px, 5vw, 80px);
+}
+
+.features__card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+}
+
+.features__text {
+    text-align: center;
+}
+
+.features__title {
+    font-size: clamp(1.5rem, 5vw, 2.375rem);
+    font-weight: 200;
+    margin-bottom: 1.25rem;
+}
+
+.title-fat {
+    display: block;
+    color: var(--dark-grey-soft);
+    font-weight: 600;
+}
+
+.features__desc {
+    color: var(--dark-grey-soft);
+    font-weight: 400;
+    max-inline-size: 55ch;
+}
+
+.features__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2.1875em;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    max-width: 23.4375rem;
+}
+
+.features__card.cyan {
+    border-top: 4px solid var(--cyan-soft);
+}
+
+.features__card.red {
+    border-top: 4px solid var(--red-soft);
+}
+
+.features__card.orange {
+    border-top: 4px solid var(--orange-soft);
+}
+
+.features__card.blue {
+    border-top: 4px solid var(--blue-soft);
+}
+
+.card__title {
+    font-weight: 600;
+}
+
+.card__desc {
+    font-size: 0.9375rem;
+}
+
+.card__icon {
+    align-self: flex-end;
+    width: 4.375rem;
+    margin-block: 1.25rem;
+}
+
+.attribution {
+    font-size: 0.6875rem; text-align: center;
+}
+
+.attribution a {
+    color: var(--lilac);
+}
+
+@media (min-width: 46.875rem) {
+    .features__card-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2.5rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .features__card-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 2.5rem;
+    }
+
+    .features__card.cyan {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+        align-self: center;
+    }
+
+    .features__card.red {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .features__card.orange {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .features__card.blue {
+        grid-row: 1 / span 2;
+        grid-column: 3;
+        align-self: center;
+    }
+}
