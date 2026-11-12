@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: []
+- Live Site URL: [https://iiirnby.github.io/Four-Card-Feature-Section/]
 
 ## My process
 
@@ -55,6 +55,6 @@ Tasks for the following works: improvement of adaptive design using CSS function
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [https://iiirnby.github.io/Four-Card-Feature-Section/]
 - Frontend Mentor - [@IIIRNBY]
 
